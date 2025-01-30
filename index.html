@@ -8,7 +8,7 @@
   <body>
     <h1>HTML Forms</h1>
     <!-- Forms: form, input, button -->
-    <form>
+    <form action="/process_form.php">
       <!-- type attribute specifies the type of input element to display -->
       <!-- name attribute specifies the name of the input element -->
       <!-- placeholder attribute specifies a short hint that describes the expected value of an input field -->
@@ -16,8 +16,11 @@
       <input id="firstname" type="text" name="firstname" /> <br />
       <label for="lastname">Last Name:</label>
       <input id="lastname" type="text" name="lastname" /> <br />
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" required /> <br />
+
       <label for="age">Age:</label>
-      <input id="age" type="number" name="age" placeholder=">18" />
+      <input id="age" type="number" name="age" placeholder=">18" required />
       <!-- Radio button type is used when we have a known number of options -->
       <!-- name attribute is used to group the radio buttons -->
       <h4>What service are you interested in?</h4>
@@ -37,12 +40,20 @@
 
       <!-- Select & option tags are used when we have a dropdown list -->
       <h4>What is your favorite color?</h4>
-      <select name="favorite_color">
+      <select name="favorite_color" required>
+        <option value="">None</option>
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
         <option value="yellow">Yellow</option>
       </select>
+      <br />
+      <!-- Two ways to create form submit button -->
+      <!-- 1: submit button of type submit-->
+      <!-- <button type="submit">Submit</button> -->
+
+      <!-- 2: input field of type of submit with value of submit -->
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
