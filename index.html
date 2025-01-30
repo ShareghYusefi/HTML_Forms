@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <!-- Forms: form, input, button -->
+    <form>
+      <!-- type attribute specifies the type of input element to display -->
+      <!-- name attribute specifies the name of the input element -->
+      <!-- placeholder attribute specifies a short hint that describes the expected value of an input field -->
+      <label for="firstname">First Name:</label>
+      <input id="firstname" type="text" name="firstname" /> <br />
+      <label for="lastname">Last Name:</label>
+      <input id="lastname" type="text" name="lastname" /> <br />
+      <label for="age">Age:</label>
+      <input id="age" type="number" name="age" placeholder=">18" />
+      <!-- Radio button type is used when we have a known number of options -->
+      <!-- name attribute is used to group the radio buttons -->
+      <h4>What service are you interested in?</h4>
+      <input type="radio" name="service" value="marketing" />Marketing <br />
+      <input type="radio" name="service" value="development" />Development
+      <br />
+      <input type="radio" name="service" value="design" />Design <br />
+
+      <!-- Checkbox type is used when user can select multiple options -->
+      <h4>What are your hobbies?</h4>
+      <input type="checkbox" name="hobbie1" value="reading" />Reading <br />
+      <input type="checkbox" name="hobbie2" value="basketball" />Basketball
+      <br />
+      <input type="checkbox" name="hobbie3" value="swimming" />Swimming <br />
+      <input type="checkbox" name="hobbie4" value="coding" />Coding <br />
+      <input type="checkbox" name="hobbie5" value="dancing" />Dancing <br />
+    </form>
+  </body>
+</html>
